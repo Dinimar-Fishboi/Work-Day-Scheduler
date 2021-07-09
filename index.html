@@ -30,17 +30,22 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <table class="table table-bordered">
+
+      <table class="table table-borderless">
         <tbody>
           <tr>
-            <th scope="row" id="0800" class="col-2">1</th>
-            <td class="col-8">Mark</td>
-            <td class="col-2"> Otto</td>
+            <th scope="row" id="0800" class=" col-2 hour"></th>
+            <td class="col-10">
+              <textarea id="activityInput" type="text" placeholder="What do you need to do?"></textarea>
+            </td>
+            <td > <button type="button" class="saveBtn fa fa-save"></button></td>
           </tr>
           <tr>
-            <th scope="row" id="0900">2</th>
-            <td class="col-8">Jacob</td>
-            <td>Thornton</td>
+            <th scope="row" id="0900" class="hour"></th>
+            <td>
+              <textarea id="activityInput" type="text" placeholder="What do you need to do?"></textarea>
+            </td>
+            <td> <button type="button" class="saveBtn fa fa-save"></button></td>
           </tr>
         </tbody>
       </table>
