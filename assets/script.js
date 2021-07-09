@@ -25,12 +25,20 @@ var calendarUpdate = localStorage.getItem("calendar");
 
 activityInput.textContent = calendarUpdate;
 
-saveBtn.addEventListener("click", function () {
 
 
-    activityInput.textContent = calendarUpdate;
+     
+function proofOfConcept() {
 
-    localStorage.setItem("calendar", calendarUpdate);
+    if ( 54 > 7) {
+        console.log("correct")
+    }
+
+    // activityInput.textContent = calendarUpdate;
+
+    // localStorage.setItem("calendar", calendarUpdate);
   
-});
+};
+
+saveBtn.addEventListener("click", proofOfConcept);
 
