@@ -17,3 +17,20 @@ $("#currentDay").text(currentDay.format("dddd, MMMM Do"));
 // Now - about that.... really all we are doing is saving the content to
 // the page, regardless of what textarea has been modified.
 // So..... we just need to figure out how to save the page.
+
+var saveBtn = document.querySelectorAll("#saveBtn");
+var activityInput = document.querySelectorAll("#activityInput");
+
+var calendarUpdate = localStorage.getItem("calendar");
+
+activityInput.textContent = calendarUpdate;
+
+saveBtn.addEventListener("click", function () {
+
+
+    activityInput.textContent = calendarUpdate;
+
+    localStorage.setItem("calendar", calendarUpdate);
+  
+});
+
