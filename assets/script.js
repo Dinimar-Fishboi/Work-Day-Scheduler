@@ -26,19 +26,42 @@ var calendarUpdate = localStorage.getItem("calendar");
 activityInput.textContent = calendarUpdate;
 
 
+// The following code block ensures that when ANY save button is pressed, the
+// action will be the same.
 
-     
-function proofOfConcept() {
-
+saveBtn.forEach(function(){
     if ( 54 > 7) {
         console.log("correct")
     }
+    for (i = 0 ; i < saveBtn.length; i++ ) {
 
-    // activityInput.textContent = calendarUpdate;
+        saveBtn[i].addEventListener("click", function(){
+            document.getElementById("0900").style.backgroundColor= "pink";
+            calendarUpdate = localStorage.setItem("calendar",calendarUpdate);
 
-    // localStorage.setItem("calendar", calendarUpdate);
+        })
+    }    
+});
+
+
+
+
+// if (saveBtn.addEventListener("click",function(){
+
+//     console.log("yes")
+// }));
+
+     
+// function proofOfConcept() {
+
+//     if ( 54 > 7) {
+//         console.log("correct")
+//     }
+
+//     activityInput.textContent = calendarUpdate;
+
+//     localStorage.setItem("calendar", calendarUpdate);
   
-};
+// };
 
-saveBtn.addEventListener("click", proofOfConcept);
 
