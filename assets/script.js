@@ -1,13 +1,5 @@
  //Date and time for the Jumbotron (aka the easy bit)
 
-//  var currentDay = $("#currentDay")
-//  var specificTime = $("#specificTime")
-
-//  var currentDay = moment();
-//  $("#currentDay").text(currentDay.format("dddd, MMMM Do"));
-//  $("#specificTime").text(currentDay.format("hh:mm:ss a"))
-
-
 function displayTime() {
     var currentDay = moment();
     $("#currentDay").text(currentDay.format("dddd, MMMM Do"));
@@ -15,10 +7,6 @@ function displayTime() {
 }
 
 setInterval(displayTime, 1000);
-
-//  var eightAM = document.querySelector("#eightAM");
-//  var eightAMInput = document.querySelector("#eightAM #activityInput");
-//  $("#eightAM .activityInput").val(localStorage.getItem("eightAM"));
 
 // So - there are really 2 main functions happening here.
 // One is the colour change indicating we are behind schedule.
