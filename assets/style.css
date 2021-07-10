@@ -10,7 +10,7 @@ textarea {
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 19px;
+  padding: 10px;
   width: 100%;
 }
 
@@ -35,6 +35,7 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  justify-content: center;
 }
 
 .hour {
@@ -64,7 +65,6 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
-  padding: 1rem;
   font-size: 36px;
 }
 
@@ -73,30 +73,6 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-.jumbotron {
+.container {
   text-align: center;
 }
-
-tr {
-  padding-left: 0%;
-  padding-right: 0%;
-}
-
-.table td, .table th{
-  padding: 0rem;
-}
-
-/*
-td:first-of-type {
-  color: purple;
-}
-
-td:nth-of-type(2){
-  padding: 0%;
-}
-
-button {
-  padding: 0%;
-  margin: 0%;
-}
-*/

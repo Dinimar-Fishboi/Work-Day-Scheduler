@@ -35,17 +35,18 @@ $(document).ready(function () {
            // var timeDue = activityInput.parent().attr("id");
           //  console.log(timeDue);
             var updateCalendar = $(".saveBtn").siblings(".activityInput").val();
+            console.log(updateCalendar)
             var hourTime = $(this).parent().attr("id");
             localStorage.setItem(updateCalendar,hourTime);
             console.log(hourTime)
-            console.log(updateCalendar);
+          //  console.log(updateCalendar);
 
         })
 
 
 
         $("#eightAM .activityInput").val(localStorage.getItem("eightAM"));
-        console.log($("#eightAM .activityInput").val(localStorage.getItem("eightAM")))
+       // console.log($("#eightAM .activityInput").val(localStorage.getItem("eightAM")))
 
 
 })
