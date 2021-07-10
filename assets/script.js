@@ -3,6 +3,8 @@
  var currentDay = moment();
  $("#currentDay").text(currentDay.format("dddd, MMMM Do"));
 
+ $("#tenAM .activityInput").text("hold me closer tiny dancer");
+
 
 //  var eightAM = document.querySelector("#eightAM");
 //  var eightAMInput = document.querySelector("#eightAM #activityInput");
@@ -22,10 +24,16 @@
 // the page, regardless of what textarea has been modified.
 // So..... we just need to figure out how to save the page.
 
- var saveBtn = $("#saveBtn");
+ //var saveBtn = $("#saveBtn");
 // var activityInput = document.querySelectorAll("#activityInput");
 
 $(document).ready(function () {
+
+
+    // $("#eightAM .activityInput").val(localStorage.getItem("eightAM"));
+    // $("#nineAM .activityInput").val(localStorage.getItem("nineAM"));
+    // $("#tenAM .activityInput").val(localStorage.getItem("tenAM"));
+
 
    
         $(".saveBtn").on("click", function() {
@@ -35,7 +43,7 @@ $(document).ready(function () {
             var updateCalendar = $(this).siblings("#activityInput").val();
             console.log(updateCalendar)
             var hourTime = $(this).parent().attr("id");
-            localStorage.setItem(updateCalendar,hourTime);
+            localStorage.setItem(hourTime,updateCalendar);
             console.log(hourTime)
           //  console.log(updateCalendar);
 
@@ -43,9 +51,13 @@ $(document).ready(function () {
 
 
 
-        $("#eightAM .activityInput").val(localStorage.getItem("eightAM"));
+        $("#eightAM #activityInput").val(localStorage.getItem("eightAM"));
+        $("#nineAM #activityInput").val(localStorage.getItem("nineAM"));
+        $("#tenAM #activityInput").val(localStorage.getItem("tenAM"));
+
        // console.log($("#eightAM .activityInput").val(localStorage.getItem("eightAM")))
 
+       $("#test").val(localStorage.getItem("eightAM"));
 
 })
 
