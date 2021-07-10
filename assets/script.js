@@ -22,7 +22,11 @@ $("#currentDay").text(currentDay.format("dddd, MMMM Do"));
 // var activityInput = document.querySelectorAll("#activityInput");
 
 $("#saveBtn" ).on(function() {
-    console.log(this)
+    console.log(this);
+    var updatedCalendar = $(this).siblings("#activityInput").val();
+    var hourTime = $(this).parent().attr("id");
+    localStorage.setItem(updatedCalendar,hourTime);
+    
   //  return value.trim();
   });
 // var calendarUpdate = localStorage.getItem("calendar");
