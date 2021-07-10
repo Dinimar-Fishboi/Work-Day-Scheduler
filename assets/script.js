@@ -32,8 +32,8 @@ $(document).ready(function () {
             console.log("have pressed a button");
             var activityInput = $("textarea").val();
             console.log(activityInput);
-            var timeDue = activityInput.parent().attr("id");
-            console.log(timeDue);
+           // var timeDue = activityInput.parent().attr("id");
+          //  console.log(timeDue);
             var updateCalendar = $(".saveBtn").siblings(".activityInput").val();
             var hourTime = $(this).parent().attr("id");
             localStorage.setItem(updateCalendar,hourTime);
@@ -50,7 +50,6 @@ $(document).ready(function () {
 
 })
 
-$("td").siblings("textarea").css( "background", "pink");
 // var calendarUpdate = localStorage.getItem("calendar");
 
 // activityInput.textContent = calendarUpdate;
