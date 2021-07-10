@@ -30,11 +30,9 @@ $(document).ready(function () {
    
         $(".saveBtn").on("click", function() {
             console.log("have pressed a button");
-            var activityInput = $("textarea").val();
-            console.log(activityInput);
            // var timeDue = activityInput.parent().attr("id");
           //  console.log(timeDue);
-            var updateCalendar = $(".saveBtn").siblings(".activityInput").val();
+            var updateCalendar = $(this).siblings("#activityInput").val();
             console.log(updateCalendar)
             var hourTime = $(this).parent().attr("id");
             localStorage.setItem(updateCalendar,hourTime);
