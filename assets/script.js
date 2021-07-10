@@ -18,30 +18,101 @@ $("#currentDay").text(currentDay.format("dddd, MMMM Do"));
 // the page, regardless of what textarea has been modified.
 // So..... we just need to figure out how to save the page.
 
-var saveBtn = document.querySelectorAll("#saveBtn");
-var activityInput = document.querySelectorAll("#activityInput");
+// var saveBtn = document.querySelectorAll("#saveBtn");
+// var activityInput = document.querySelectorAll("#activityInput");
 
-var calendarUpdate = localStorage.getItem("calendar");
+$("#saveBtn" ).on(function() {
+    console.log(this)
+  //  return value.trim();
+  });
+// var calendarUpdate = localStorage.getItem("calendar");
 
-activityInput.textContent = calendarUpdate;
+// activityInput.textContent = calendarUpdate;
 
+// updateCalendar();
+
+// function updateCalendar() {
+//     var textareaSubmit = localStorage.getItem('key');
+//     activityInput.textContent = textareaSubmit
+// }
+
+// console.log(activityInput)
+// console.log(saveBtn)
+
+// We need to apply the setItem code above the save.Btn work, else nothing will
+// be summoned.
 
 // The following code block ensures that when ANY save button is pressed, the
 // action will be the same.
 
-saveBtn.forEach(function(){
-    if ( 54 > 7) {
-        console.log("correct")
-    }
-    for (i = 0 ; i < saveBtn.length; i++ ) {
+// saveBtn.forEach(function(){
+//     if ( 54 > 7) {
+//         console.log("correct")
+//     }
+//     for (i = 0 ; i < saveBtn.length; i++ ) {
 
-        saveBtn[i].addEventListener("click", function(){
-            document.getElementById("0900").style.backgroundColor= "pink";
-            calendarUpdate = localStorage.setItem("calendar",calendarUpdate);
+//         saveBtn[i].addEventListener("click", function(){
 
-        })
-    }    
-});
+//             console.log("saveBtn has been clicked");
+            
+
+//             activityInput[i].textContent = activityInput[i]
+
+//             //calendarUpdate = localStorage.setItem("calendar",JSON.stringify(calendarUpdate));
+
+//         })
+//     }    
+// });
+
+
+// //=====================
+// var emailInput = document.querySelector('#email');
+// var passwordInput = document.querySelector('#password');
+// var signUpButton = document.querySelector('#sign-up');
+// var msgDiv = document.querySelector('#msg');
+// var userEmailSpan = document.querySelector('#user-email');
+// var userPasswordSpan = document.querySelector('#user-password');
+
+// renderLastRegistered();
+
+// function displayMessage(type, message) {
+//   msgDiv.textContent = message;
+//   msgDiv.setAttribute('class', type);
+// }
+
+// function renderLastRegistered() {
+//   var email = localStorage.getItem('email');
+//   var password = localStorage.getItem('password');
+
+//   if (!email || !password) {
+//     return;
+//   }
+
+//   userEmailSpan.textContent = email;
+//   userPasswordSpan.textContent = password;
+// }
+
+// signUpButton.addEventListener('click', function (event) {
+//   event.preventDefault();
+
+//   var email = document.querySelector('#email').value;
+//   var password = document.querySelector('#password').value;
+
+//   if (email === '') {
+//     displayMessage('error', 'Email cannot be blank');
+//   } else if (password === '') {
+//     displayMessage('error', 'Password cannot be blank');
+//   } else {
+//     displayMessage('success', 'Registered successfully');
+
+//     localStorage.setItem('email', email);
+//     localStorage.setItem('password', password);
+//     renderLastRegistered();
+//   }
+// });
+
+
+
 
 
 
