@@ -17,18 +17,25 @@ setInterval(displayTime, 1000);
 // that can be changed depending on what time of the day it is, indicating
 // that we're looking at a conditional statment based on TIME.
 
+function hourNow() {
+    var thisIsTheTime = moment().format("hha");
+    console.log(thisIsTheTime);
+}
+
+hourNow();
+
+
 //Two is saving the inputs to the correlating rows (i.e the activity for 4pm is
 // only saved to the textarea in the 4pm row rather than ALL of the texareas.)
 
-//$(document).ready(function () {
-
+    //First off, we summon the inputs that may have been entered previously.
 
     $("#eightAM #activityInput").val(localStorage.getItem("eightAM"));
     $("#nineAM #activityInput").val(localStorage.getItem("nineAM"));
     $("#tenAM #activityInput").val(localStorage.getItem("tenAM"));
     $("#elevenAM #activityInput").val(localStorage.getItem("elevenAM"));
     $("#twelvePM #activityInput").val(localStorage.getItem("twelvePM"));
-    $("#onePM #activityInput").val(localStorage.getItem("onePM"));
+    $("#01pm #activityInput").val(localStorage.getItem("01pm"));
     $("#twoPM #activityInput").val(localStorage.getItem("twoPM"));
     $("#threePM #activityInput").val(localStorage.getItem("threePM"));
     $("#fourPM #activityInput").val(localStorage.getItem("fourPM"));
@@ -38,10 +45,19 @@ setInterval(displayTime, 1000);
     $("#eightPM #activityInput").val(localStorage.getItem("eightPM"));
 
 
-
+    // Here is where the setItem code is. the first line indidcates that the function
+    // is to execute whenever a save button has been pressed.
    
         $(".saveBtn").on("click", function() {
             console.log("have pressed a button");
+
+            // THIS in the next few lines refers to the button pressed. We are specifically
+            // requesting the sibling with the #activityInput id (aka our textarea element)
+            // and the parent ID of the button (aka 8AM for example).
+
+            //Once those two pieces of data have variables assigned, then they are then placed
+            // in  the local storage under unique keys which can be summoned above.
+
             var updateCalendar = $(this).siblings("#activityInput").val();
             console.log(updateCalendar)
             var hourTime = $(this).parent().attr("id");
@@ -49,5 +65,5 @@ setInterval(displayTime, 1000);
             console.log(hourTime)
         })
 
-//  })
+
 
