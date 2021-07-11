@@ -9,63 +9,46 @@ function displayTime() {
 setInterval(displayTime, 1000);
 
 // So - there are really 2 main functions happening here.
-// One is the colour change indicating we are behind schedule.
-// As part of the starter code, we've been given classes to indicate
-// at what stage of the project we are at.
-
-// There are .past .present and .future classes given with the CSS file
-// that can be changed depending on what time of the day it is, indicating
-// that we're looking at a conditional statment based on TIME.
-
-// var timeBlock = $(".time-block")
-// console.log(timeBlock);
-// console.log(timeBlock[1]);
-
-// for (i = 0; i < timeBlock.length; i++) {
-//     var testProcess = parseInt(timeBlock[i].attr("id").split("hour"));
-//     console.log(testProcess)
-// }
-
-// console.log(timeBlock[1])
-
+// One is adding classes dependent on the time blocks in association with
+// the current time.
 
 function hourNow() {
     var thisIsTheTime = moment().format("HH");
     console.log(thisIsTheTime);
+
+    // In order to save some sanity - the tags for each time-block were converted
+    // to 24hr time to make life easier.
     
     $(".time-block").each(function() {
-        // console.log(index + ": " + $(this).text());
          var timeBlock = ($(this).attr("id"));
-         console.log(timeBlock)
+
+         // we are also removing classes because if we don't then eventually each
+         // block will only have the 'past' class attached.
      
          if (thisIsTheTime === timeBlock) {
-             console.log(" the current hour is:" + timeBlock);
-             $(this).addClass("present");
+            $(this).addClass("present");
+            $(this).removeClass("future");
+            $(this).removeClass("past");
          } else if (thisIsTheTime < timeBlock){
-             //console.log("no dice");
-             $(this).addClass("future");
-
+            $(this).addClass("future");
+            $(this).removeClass("past");
+            $(this).removeClass("present");
          } else if (thisIsTheTime > timeBlock){
-            //console.log("no dice");
             $(this).addClass("past");
-
+            $(this).removeClass("future");
+            $(this).removeClass("present");
         } 
-        
-     
+         
      })
     
 }
 
-
 hourNow();
-
-
-
 
 //Two is saving the inputs to the correlating rows (i.e the activity for 4pm is
 // only saved to the textarea in the 4pm row rather than ALL of the texareas.)
 
-    //First off, we summon the inputs that may have been entered previously.
+    //First off, we summon any inputs that may have been entered previously.
 
     $("#08 #activityInput").val(localStorage.getItem("08"));
     $("#09 #activityInput").val(localStorage.getItem("09"));
@@ -82,8 +65,6 @@ hourNow();
     $("#20 #activityInput").val(localStorage.getItem("20"));
     $("#21 #activityInput").val(localStorage.getItem("21"));
     $("#22 #activityInput").val(localStorage.getItem("22"));
-
-
 
     // Here is where the setItem code is. the first line indidcates that the function
     // is to execute whenever a save button has been pressed.
