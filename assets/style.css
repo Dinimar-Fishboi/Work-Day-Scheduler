@@ -36,9 +36,11 @@ textarea {
 
 .row {
   white-space: pre-wrap;
+  display: flex;
   height: 80px;
   border-top: 1px solid white;
   justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .hour {
@@ -68,7 +70,8 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
-  font-size: 36px;
+  font-size: 2rem;
+  line-height: 0.5;
 }
 
 .saveBtn i:hover {
@@ -78,4 +81,10 @@ textarea {
 
 .container {
   text-align: center;
+}
+
+@media screen and (max-width: 633px) {
+  .display-3 {
+    font-size: 2.5rem;
+  }
 }
