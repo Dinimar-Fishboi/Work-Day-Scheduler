@@ -30,7 +30,7 @@ setInterval(displayTime, 1000);
 
 
 function hourNow() {
-    var thisIsTheTime = moment().format("hha");
+    var thisIsTheTime = moment().format("HH");
     console.log(thisIsTheTime);
     
     $(".time-block").each(function() {
@@ -41,7 +41,7 @@ function hourNow() {
          if (thisIsTheTime === timeBlock) {
              console.log(" the current hour is:" + timeBlock);
              $(this).addClass("present");
-         } else if (thisIsTheTime <timeBlock){
+         } else if (thisIsTheTime < timeBlock){
              //console.log("no dice");
              $(this).addClass("future");
 
@@ -63,21 +63,21 @@ hourNow();
 
     //First off, we summon the inputs that may have been entered previously.
 
-    $("#08am #activityInput").val(localStorage.getItem("08am"));
-    $("#09am #activityInput").val(localStorage.getItem("09am"));
-    $("#10am #activityInput").val(localStorage.getItem("10am"));
-    $("#11am #activityInput").val(localStorage.getItem("11am"));
-    $("#12pm #activityInput").val(localStorage.getItem("12pm"));
-    $("#01pm #activityInput").val(localStorage.getItem("01pm"));
-    $("#02pm #activityInput").val(localStorage.getItem("02pm"));
-    $("#03pm #activityInput").val(localStorage.getItem("03pm"));
-    $("#04pm #activityInput").val(localStorage.getItem("04pm"));
-    $("#05pm #activityInput").val(localStorage.getItem("05pm"));
-    $("#06pm #activityInput").val(localStorage.getItem("06pm"));
-    $("#07pm #activityInput").val(localStorage.getItem("07pm"));
-    $("#08pm #activityInput").val(localStorage.getItem("08pm"));
-    $("#09pm #activityInput").val(localStorage.getItem("09pm"));
-    $("#10pm #activityInput").val(localStorage.getItem("10pm"));
+    $("#08 #activityInput").val(localStorage.getItem("08"));
+    $("#09 #activityInput").val(localStorage.getItem("09"));
+    $("#10 #activityInput").val(localStorage.getItem("10"));
+    $("#11 #activityInput").val(localStorage.getItem("11"));
+    $("#12 #activityInput").val(localStorage.getItem("12"));
+    $("#13 #activityInput").val(localStorage.getItem("13"));
+    $("#14 #activityInput").val(localStorage.getItem("14"));
+    $("#15 #activityInput").val(localStorage.getItem("15"));
+    $("#16 #activityInput").val(localStorage.getItem("16"));
+    $("#17 #activityInput").val(localStorage.getItem("17"));
+    $("#18 #activityInput").val(localStorage.getItem("18"));
+    $("#19 #activityInput").val(localStorage.getItem("19"));
+    $("#20 #activityInput").val(localStorage.getItem("20"));
+    $("#21 #activityInput").val(localStorage.getItem("21"));
+    $("#22 #activityInput").val(localStorage.getItem("22"));
 
 
 
