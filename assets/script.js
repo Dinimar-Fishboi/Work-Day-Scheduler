@@ -41,9 +41,12 @@ function hourNow() {
          if (thisIsTheTime === timeBlock) {
              console.log(" the current hour is:" + timeBlock);
              $(this).addClass("present");
-         } else  {
-             console.log("no dice");
+         } else if (thisIsTheTime <timeBlock){
+             //console.log("no dice");
+             $(this).addClass("future");
+
          }
+        
      
      })
     
@@ -99,3 +102,4 @@ hourNow();
        })
 
 
+    
