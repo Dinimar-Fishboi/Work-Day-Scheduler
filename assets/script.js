@@ -17,37 +17,41 @@ setInterval(displayTime, 1000);
 // that can be changed depending on what time of the day it is, indicating
 // that we're looking at a conditional statment based on TIME.
 
-var timeBlock = $(".time-block")
-console.log(timeBlock);
-console.log(timeBlock[1]);
+// var timeBlock = $(".time-block")
+// console.log(timeBlock);
+// console.log(timeBlock[1]);
 
 // for (i = 0; i < timeBlock.length; i++) {
 //     var testProcess = parseInt(timeBlock[i].attr("id").split("hour"));
 //     console.log(testProcess)
 // }
 
-console.log(timeBlock[1])
+// console.log(timeBlock[1])
 
 
 function hourNow() {
     var thisIsTheTime = moment().format("hha");
     console.log(thisIsTheTime);
     
-
-    // if (thisIsTheTime === $(".time-block").attr("id").split("hour")) {
-    //     console.log(" the current hour is:" + timeBlock);
-    // } else  {
-    //     console.log("no dice");
-    // }
+    $(".time-block").each(function() {
+        // console.log(index + ": " + $(this).text());
+         var timeBlock = ($(this).attr("id"));
+         console.log(timeBlock)
+     
+         if (thisIsTheTime === timeBlock) {
+             console.log(" the current hour is:" + timeBlock);
+         } else  {
+             console.log("no dice");
+         }
+     
+     })
+    
 }
 
 
 hourNow();
 
-$(".time-block").each(function() {
-   // console.log(index + ": " + $(this).text());
-    console.log($(this).attr("id"));
-})
+
 
 
 //Two is saving the inputs to the correlating rows (i.e the activity for 4pm is
