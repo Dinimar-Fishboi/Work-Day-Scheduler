@@ -45,7 +45,11 @@ function hourNow() {
              //console.log("no dice");
              $(this).addClass("future");
 
-         }
+         } else if (thisIsTheTime > timeBlock){
+            //console.log("no dice");
+            $(this).addClass("past");
+
+        } 
         
      
      })
