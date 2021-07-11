@@ -26,17 +26,17 @@ function hourNow() {
          // block will only have the 'past' class attached.
      
          if (thisIsTheTime === timeBlock) {
-            $(this).addClass("present");
-            $(this).removeClass("future");
-            $(this).removeClass("past");
+            $(this).children("#activityInput").addClass("present");
+            $(this).children("#activityInput").removeClass("future");
+            $(this).children("#activityInput").removeClass("past");
          } else if (thisIsTheTime < timeBlock){
-            $(this).addClass("future");
-            $(this).removeClass("past");
-            $(this).removeClass("present");
+            $(this).children("#activityInput").addClass("future");
+            $(this).children("#activityInput").removeClass("past");
+            $(this).children("#activityInput").removeClass("present");
          } else if (thisIsTheTime > timeBlock){
-            $(this).addClass("past");
-            $(this).removeClass("future");
-            $(this).removeClass("present");
+            $(this).children("#activityInput").addClass("past");
+            $(this).children("#activityInput").removeClass("future");
+            $(this).children("#activityInput").removeClass("present");
         } 
          
      })
