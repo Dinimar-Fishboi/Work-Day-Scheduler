@@ -30,19 +30,22 @@ hourNow();
 
     //First off, we summon the inputs that may have been entered previously.
 
-    $("#eightAM #activityInput").val(localStorage.getItem("eightAM"));
-    $("#nineAM #activityInput").val(localStorage.getItem("nineAM"));
-    $("#tenAM #activityInput").val(localStorage.getItem("tenAM"));
-    $("#elevenAM #activityInput").val(localStorage.getItem("elevenAM"));
-    $("#twelvePM #activityInput").val(localStorage.getItem("twelvePM"));
+    $("#08am #activityInput").val(localStorage.getItem("08am"));
+    $("#09am #activityInput").val(localStorage.getItem("09am"));
+    $("#10am #activityInput").val(localStorage.getItem("10am"));
+    $("#11am #activityInput").val(localStorage.getItem("11am"));
+    $("#12pm #activityInput").val(localStorage.getItem("12pm"));
     $("#01pm #activityInput").val(localStorage.getItem("01pm"));
-    $("#twoPM #activityInput").val(localStorage.getItem("twoPM"));
-    $("#threePM #activityInput").val(localStorage.getItem("threePM"));
-    $("#fourPM #activityInput").val(localStorage.getItem("fourPM"));
-    $("#fivePM #activityInput").val(localStorage.getItem("fivePM"));
-    $("#sixPM #activityInput").val(localStorage.getItem("sixPM"));
-    $("#sevenPM #activityInput").val(localStorage.getItem("sevenPM"));
-    $("#eightPM #activityInput").val(localStorage.getItem("eightPM"));
+    $("#02pm #activityInput").val(localStorage.getItem("02pm"));
+    $("#03pm #activityInput").val(localStorage.getItem("03pm"));
+    $("#04pm #activityInput").val(localStorage.getItem("04pm"));
+    $("#05pm #activityInput").val(localStorage.getItem("05pm"));
+    $("#06pm #activityInput").val(localStorage.getItem("06pm"));
+    $("#07pm #activityInput").val(localStorage.getItem("07pm"));
+    $("#08pm #activityInput").val(localStorage.getItem("08pm"));
+    $("#09pm #activityInput").val(localStorage.getItem("09pm"));
+    $("#10pm #activityInput").val(localStorage.getItem("10pm"));
+
 
 
     // Here is where the setItem code is. the first line indidcates that the function
