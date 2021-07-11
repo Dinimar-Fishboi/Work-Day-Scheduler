@@ -44,8 +44,9 @@ function hourNow() {
 
 hourNow();
 
-$(".time-block").each(function(index) {
-    console.log(index + ": " + $(this).text());
+$(".time-block").each(function() {
+   // console.log(index + ": " + $(this).text());
+    console.log($(this).attr("id"));
 })
 
 
