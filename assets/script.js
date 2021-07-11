@@ -40,6 +40,7 @@ function hourNow() {
      
          if (thisIsTheTime === timeBlock) {
              console.log(" the current hour is:" + timeBlock);
+             $(this).addClass("present");
          } else  {
              console.log("no dice");
          }
