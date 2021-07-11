@@ -12,5 +12,5 @@ A few things to note, when the time switches from one hour block to the next (ex
 
 https://dinimar-fishboi.github.io/Work-Day-Scheduler/
 
-![Screen Shot 2021-07-11 at 20 13 18](https://user-images.githubusercontent.com/83541287/125191243-d3171d80-e284-11eb-97db-37f1879ff097.png)
-![Screen Shot 2021-07-11 at 20 13 36](https://user-images.githubusercontent.com/83541287/125191256-d6120e00-e284-11eb-8beb-f5cf249684f1.png)
+<img width="1505" alt="Screen Shot 2021-07-11 at 20 22 51" src="https://user-images.githubusercontent.com/83541287/125191444-d6f76f80-e285-11eb-8e97-ebf157c1e036.png">
+<img width="1505" alt="Screen Shot 2021-07-11 at 20 22 58" src="https://user-images.githubusercontent.com/83541287/125191449-db238d00-e285-11eb-87f5-5d9b85a6b746.png">
