@@ -14,3 +14,12 @@ https://dinimar-fishboi.github.io/Work-Day-Scheduler/
 
 <img width="1505" alt="Screen Shot 2021-07-11 at 20 22 51" src="https://user-images.githubusercontent.com/83541287/125191444-d6f76f80-e285-11eb-8e97-ebf157c1e036.png">
 <img width="1505" alt="Screen Shot 2021-07-11 at 20 22 58" src="https://user-images.githubusercontent.com/83541287/125191449-db238d00-e285-11eb-87f5-5d9b85a6b746.png">
+
+The MIT License (MIT)
+Copyright © 2021 <copyright holders>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
