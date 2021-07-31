@@ -16,7 +16,7 @@ https://dinimar-fishboi.github.io/Work-Day-Scheduler/
 <img width="1505" alt="Screen Shot 2021-07-11 at 20 22 58" src="https://user-images.githubusercontent.com/83541287/125191449-db238d00-e285-11eb-87f5-5d9b85a6b746.png">
 
 The MIT License (MIT)
-Copyright © 2021 <copyright holders>
+Copyright © 2021 Tayla Tallis
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
