@@ -6,6 +6,14 @@ The point of this project was to generate a calendar-style app primarily using B
 
 The user should also be able to track when activities will need to be started, as the hour-blocks change colour depending on whether they are in the past, present or future.
 
+## Technologies used
+1. HTML
+2. CSS
+3. JavaScript
+4. Bootstrap
+5. Moment.js
+6. jQuery
+
 ## Small bugs
 
 A few things to note, when the time switches from one hour block to the next during a single session, the colour doesn’t change over until the page is refreshed. In addition at the top of the page where the Date and Time are located, it does take a few seconds to load which isn’t ideal.
