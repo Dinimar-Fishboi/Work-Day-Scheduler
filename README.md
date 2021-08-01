@@ -23,6 +23,10 @@ https://dinimar-fishboi.github.io/Work-Day-Scheduler/
 <img width="1505" alt="Screen Shot 2021-07-11 at 20 22 51" src="https://user-images.githubusercontent.com/83541287/125191444-d6f76f80-e285-11eb-8e97-ebf157c1e036.png">
 <img width="1505" alt="Screen Shot 2021-07-11 at 20 22 58" src="https://user-images.githubusercontent.com/83541287/125191449-db238d00-e285-11eb-87f5-5d9b85a6b746.png">
 
+## Contact
+email: dev.fish.studio@protonmail.com
+portfolio: https://dinimar-fishboi.github.io/Dev.Fish/
+
 The MIT License (MIT)
 Copyright © 2021 Tayla Tallis
 
